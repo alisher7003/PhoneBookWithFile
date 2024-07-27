@@ -11,11 +11,13 @@ namespace PhoneBookWithFile.Services
         private const string filePath = "../../../phoneBook.txt";
         private ILoggingService log;
         private string SelectedContact;
+
         public FileService()
         {
             this.log = new LoggingService();
             EnsureFileExists();
         }
+
         public void AddContact()
         {
             Console.Clear();
